@@ -59,7 +59,7 @@ cd mac-dev-playbook
 echo -e "${BLUE}Installing Ansible requirements${ENDC}"
 ansible-galaxy install -r requirements.yml
 
-#ansible-playbook -i inventory --ask-become-pass main.yml
+ansible-playbook main.yml -i inventory
 
 # Disable passwordless sudo after the macbuild is complete
 sudo sed -i -e "s/^%admin.*/%admin  ALL=(ALL) ALL/" /etc/sudoers
