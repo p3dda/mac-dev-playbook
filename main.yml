@@ -33,6 +33,8 @@
     - include: tasks/osx.yml
       when: configure_osx
       tags: ['osx']
+      
+    - include: tasks/dock.yml  
 
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
