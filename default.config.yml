@@ -18,9 +18,9 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - mutt
   - wget
   - ruby
-  - mutt
 
 homebrew_taps:
   - homebrew/core
@@ -62,7 +62,6 @@ homebrew_cask_apps:
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
-
 
 dockitems_to_remove:
   - Launchpad
