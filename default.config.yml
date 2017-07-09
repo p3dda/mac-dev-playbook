@@ -89,7 +89,7 @@ pip_packages: []
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
 
-  dockitems_to_remove:
+dockitems_to_remove:
   - Launchpad
   - Mail
   - Safari
