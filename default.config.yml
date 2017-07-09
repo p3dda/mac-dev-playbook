@@ -43,6 +43,7 @@ homebrew_installed_packages:
   - pv
   - wget
   - wrk
+  - ruby
 
 homebrew_taps:
   - homebrew/core
