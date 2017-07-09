@@ -18,6 +18,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - tree
   - mutt
   - wget
   - ruby
