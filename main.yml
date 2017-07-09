@@ -33,11 +33,11 @@
     - include: tasks/osx.yml
       when: configure_osx
       tags: ['osx']
-      
-    #- include: tasks/dock.yml  
 
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
+
+    - include: tasks/dock.yml        
 
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"
