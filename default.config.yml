@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - wget
   - mutt
   - ruby
+  - dockutil
 
 
 homebrew_taps:
