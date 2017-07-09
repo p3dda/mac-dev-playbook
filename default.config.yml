@@ -106,6 +106,7 @@ dockitems_to_remove:
   - App Store
   - System Preferences
   - Calendar
+  - Siri
 
 dockitems_to_persist:
   - name: Google Chrome
