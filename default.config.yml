@@ -79,7 +79,7 @@ composer_packages: []
   #   version: "^8.1" # default: N/A
 gem_packages:
   - jekyll
-  - pages-gem
+  - github-pages
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
