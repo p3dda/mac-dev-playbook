@@ -18,31 +18,31 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  #- autoconf
-  #- bash-completion
-  #- chromedriver
-  #- doxygen
-  #- gettext
-  #- gifsicle
+  - autoconf
+  - bash-completion
+  - chromedriver
+  - doxygen
+  - gettext
+  - gifsicle
   - git
-  #- go
-  #- gpg
-  #- hub
-  #- httpie
-  #- iperf
-  #- libevent
-  #- sqlite
-  #- mcrypt
-  #- nmap
-  #- node
-  #- nvm
-  #- ssh-copy-id
-  #- cowsay
-  #- readline
-  #- openssl
-  #- pv
-  #- wget
-  #- wrk
+  - go
+  - gpg
+  - hub
+  - httpie
+  - iperf
+  - libevent
+  - sqlite
+  - mcrypt
+  - nmap
+  - node
+  - nvm
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - wget
+  - wrk
   - ruby
 
 homebrew_taps:
@@ -96,10 +96,9 @@ composer_packages: []
   #   state: present # present/absent, default: present
   #   version: "^8.1" # default: N/A
 gem_packages:
-  - name: bundler
-    state: present
-  - name: jekyll
-    state: present
+  - bundler
+  - sass
+  - jekyll
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
