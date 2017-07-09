@@ -18,10 +18,12 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - autoconf
   - tree
-  - mutt
   - wget
+  - mutt
   - ruby
+
 
 homebrew_taps:
   - homebrew/core
