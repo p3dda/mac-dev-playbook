@@ -8,18 +8,18 @@ configure_osx: yes
 
 dotfiles_repo: https://github.com/scottnasello/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/src/dotfiles
+dotfiles_repo_local_destination: /Users/scott/Dropbox/Development/GitHub/dotfiles/
 dotfiles_files:
   - .bash_profile
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
   - .muttrc
   - .colors.muttrc
   - .gitconfig
   - .imapfilter.config
-
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+  
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
