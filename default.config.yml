@@ -13,6 +13,7 @@ dotfiles_files:
   - .bash_profile
   - .muttrc
   - .colors.muttrc
+  - .bindings.muttrc
   - .gitconfig
   - .imapfilter.config
   - .gitignore
