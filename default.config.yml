@@ -1,14 +1,14 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: no
+configure_dotfiles: yes
 configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
 dotfiles_repo: https://github.com/scottnasello/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: /Users/scott/Dropbox/Development/GitHub/dotfiles/
+dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_files:
   - .bash_profile
   - .muttrc
