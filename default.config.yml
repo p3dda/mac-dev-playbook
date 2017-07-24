@@ -15,6 +15,10 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+  - .muttrc
+  - .colors.muttrc
+  - .gitconfig
+  - .imapfilter.config
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
