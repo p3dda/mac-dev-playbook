@@ -1,0 +1,302 @@
+---
+configure_sudoers: yes
+configure_terminal: yes
+configure_osx: yes
+configure_dock: yes
+
+dotfiles_repo: https://github.com/scottnasello/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/src/dotfiles
+dotfiles_files:
+  - .ignore
+  - .bash_profile
+  - .bashrc
+  - .chunkwmrc
+  - .dircolors
+  - .gitconfig
+  - .gitignore
+  - .inputrc
+  - .khdrc
+  - .lftprc
+  - .bash_sessions_disable
+  - .bash/aliases.sh
+  - .bash/colors.sh
+  - .bash/completions.sh
+  - .bash/exports.sh
+  - .bash/functions.sh
+  - .bash/prompt.sh
+  - .bash/shell.sh
+  - .bash/ssh-agent.sh
+  - .osx/osx.sh
+  - .weechat/irc.conf
+  - .weechat/lua/autoload/matrix.lua
+  - .weechat/perl/autoload/buffers.pl
+  - .weechat/plugins.conf
+  - .weechat/plugins/scripts/perl/buffers.pl
+  - .weechat/plugins/weechat-matrix-protocol-script/matrix.lua
+  - .weechat/plugins/weechat-notification-center/notification_center.py
+  - .weechat/python/autoload/notification_center.py
+  - .weechat/python/autoload/wee_slack.py
+  - .weechat/script.conf
+  - .weechat/weechat.conf
+  - .weechat/weechat.png
+  - .weechat/xfer.conf
+
+homebrew_installed_packages:
+  # Install GNU packages.
+  # https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
+  - coreutils
+  - binutils
+  - diffutils
+  - { name: ed, install_options: "default-names" }
+  - { name: findutils, install_options: "with-default-names" }
+  - gawk
+  - { name: gnu-indent, install_options: "with-default-names" }
+  - { name: gnu-sed, install_options: "with-default-names" }
+  - { name: gnu-tar, install_options: "with-default-names" }
+  - { name: gnu-which, install_options: "with-default-names" }
+  - gnutls
+  - { name: grep, install_options: "with-default-names" }
+  - gzip
+  - screen
+  - watch
+  - { name: wdiff, install_options: "with-gettext" }
+  - wget
+  # Update GNU pre-installed packages.
+  - bash
+  - emacs
+  - gdb
+  - gpatch
+  - less
+  - m4
+  - make
+  - nano
+  # Update non-GNU pre-installed packages.
+  - { name: curl, install_options: "with-nghttp2" }
+  - file-formula
+  - git
+  - openssh
+  - perl
+  - python
+  - rsync
+  - svn
+  - unzip
+
+  # Some other GNU tools.
+  - autoconf                  # build tool
+  - gettext                   # gnu translation tool @todo link
+  - gpg                       # gnu privacy guard
+  - readline                  # gnu readline
+
+  # More terminal tools.
+  - git-standup               # recall what you did on the last working day
+  - httpie                    # cli http client
+  - iperf                     # bandwidth benchmarking
+  - lynx                      # browser
+  - nmap                      # network mapper
+  - openssl                   # ssl/tls toolkit
+  - p7zip                     # 7 zip
+  - pigz                      # parallel gzip
+  - pv                        # pipe viewer
+  - { name: weechat, install_options: "with-perl,with-python,with-lua" }
+  - wrk                       # http benchmarking
+  - zopfli                    # zopfli compression
+
+  # Programming languages
+  - lua
+  - node
+  - go
+  - { name: php71, install_options: "with-pear,without-fpm" }
+  - python3
+  - ruby
+
+  # Libraries
+  - luajit                    # required by vim
+  - duti                      # required by tasks/default-applications.yml
+
+  # Essential development tools/libraries.
+  - { name: base16-shell, install_options: "HEAD" } # base16 colors in shell
+  - { name: chunkwm, install_options: "without-border" } # tiling window manager
+  - exa                       # ls replacement
+  - fasd                      # autojump
+  - fzf                       # fuzzy finder
+  - khd                       # hotkey daemon
+  - massren                   # mass renaming in vim
+  - mosh                      # mobile shell
+  - rename                    # regex rename
+  - ssh-copy-id               # send public key to remote
+  - the_silver_searcher       # ag, faster than ack
+  - tree                      # recursive directory listing
+  - { name: vim, install_options: "with-luajit,without-ruby,with-override-system-vi" }
+  - neovim                    # the new vim
+
+  # Package managers
+  - composer
+
+  # Shell completions
+  - bash-completion2         # bash 4
+  - cap-completion           # capistrano
+  - open-completion          # open
+  - vagrant-completion       # vagrant
+  - wpcli-completion         # wp-cli
+
+  # Image/Video tools
+  - exiv2
+  - name: ffmpeg
+    install_options: "with-fdk-aac,with-ffplay,with-freetype,with-libass,with-libquvi,with-libvorbis,with-libvpx,with-opus,with-x265,with-theora"
+  - gifsicle
+  - { name: imagemagick, install_options: "with-webp" }
+  - mozjpeg
+  - optipng
+  - pngcheck
+  - webp
+
+  # Install font tools.
+  - sfnt2woff
+  - sfnt2woff-zopfli
+  - woff2
+
+homebrew_taps:
+  - bramstein/webfonttools # font tools
+  - caskroom/cask          # casks
+  - caskroom/fonts         # inconsolata font
+  - caskroom/versions      # iterm2-beta
+  - crisidev/homebrew-chunkwm # chunkwm
+  - homebrew/core          #
+  - homebrew/php           #
+  - koekeishiya/formulae   # chunkwm, khd
+  - laurent22/massren      # massren
+  - oxyc/custom            # base16-shell, kitty
+  - neovim/neovim          # neovim
+
+homebrew_cask_apps:
+- 1password
+- amazon-music
+- android-file-transfer
+- atom
+- beyond-compare
+- blue-jeans
+- chefdk
+- dropbox
+- evernote
+- firefox
+- google-chrome
+- google-drive
+- istat-menus
+- kindle
+- onedrive
+- opera
+- parallels
+- phpstorm
+- pocket-casts
+- powershell
+- slack
+- snagit
+- spotify
+- sqlpro-for-mssql
+- vagrant
+- virtualbox
+- visual-studio-code
+- vmware-horizon-client
+
+homebrew_services:
+  - khd                    # hotkey daemon
+
+osx_script: ~/.osx/osx.sh
+
+composer_packages: []
+
+
+npm_packages:
+  - name: yarn                 # package manager
+  - name: webpack              # build tool
+  - name: bower                # package manager
+  - name: gulp                 # build tool
+  - name: svgo                 # svg minifier
+  - name: jsonlint             # vim linter for json
+  - name: markdownlint-cli     # vim linter for markdown
+  - name: eslint               # vim linter for javascript
+  - name: eslint-plugin-import # dependency of global eslint
+
+gem_packages:
+  - name: bundler              # package manager
+  - name: capistrano           # deploy tool
+  - name: jekyll               # github pages
+  - name: jekyll-feed          # github pages
+  - name: rubocop              # drupal vm lint
+  - name: neovim               # ruby provider for neovim
+  - name: sass                 # vim linter for sass
+  - name: github-pages
+
+pip_packages:
+  - name: mkdocs                       # drupal vm docs
+  - { name: neovim, executable: pip2 } # python2 provider for neovim
+  - { name: neovim, executable: pip3 } # python3 provider for neovim
+  - name: ansible-lint                 # vim linter for ansible
+  - name: yamllint                     # vim linter for bash
+  - name: proselint                    # vim linter for text
+  - name: pync                         # weechat notification_center plugin
+  - name: websocket-client             # weechat wee_slack plugin
+
+luarocks_packages:
+  - name: lua-cjson                    # weechat matrix plugin
+
+post_provision_tasks: "{{ playbook_dir }}/../tasks/*.yml"
+
+# fubarhouse.macdock settings.
+dockitems_disabled:
+  - Launchpad
+  - Mail
+  - Safari
+  - Contacts
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - Messages
+  - FaceTime
+  - iTunes
+  - iBooks
+  - App Store
+  - System Preferences
+  - Calendar
+  - Siri
+
+dockitems_enabled:
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: Slack
+    path: "/Applications/Slack.app"
+    pos: 2
+  - name: Terminal
+    path: /Applications/Utilities/Terminal.app
+    pos: 3
+  - name: Activity Monitor
+    path: "/Applications/Utilities/Activity Monitor.app"
+    pos: 4
+  - name: Visual Studio Code
+    path: "/Applications/Visual Studio Code.app"
+    pos: 5    
+    
+# Variables used across tasks/*.yml
+local_user: "{{ ansible_env.SUDO_USER | default(ansible_env.USER, true) | default(ansible_user_id, true) }}"
+
+# tasks/vagrant.yml settings.
+vagrant_plugins_force_install: false
+vagrant_plugins:
+  - vagrant-hostsupdater
+  - vagrant-vbguest
+
+# tasks/vim.yml settings.
+vimrc_repo: https://github.com/oxyc/vimrc.git
+vimrc_repo_local_destination: ~/Projects/Personal/vimrc
+
+# tasks/iterm2.yml settings.
+iterm2_enable_automatic_updates: true
+iterm2_preference_folder: "{{ playbook_dir }}/../files"
+
+# tasks/git.yml settings.
+git_user_name: "Scott Nasello"
+git_user_email: nasello.scott@gmail.com
+git_github_user: scottnasello

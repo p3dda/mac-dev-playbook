@@ -1,0 +1,3 @@
+[submodule "geerlingguy.mac-dev-playbook"]
+	path = geerlingguy.mac-dev-playbook
+	url = https://github.com/geerlingguy/mac-dev-playbook.git
