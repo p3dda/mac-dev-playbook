@@ -45,12 +45,11 @@ homebrew_cask_apps:
 - android-file-transfer
 - atom
 - beyond-compare
-- blue-jeans-launcher
+- blue-jeans
 - chefdk
 - dropbox
 - evernote
 - firefox
-- github-desktop
 - google-chrome
 - google-drive
 - istat-menus
@@ -60,8 +59,7 @@ homebrew_cask_apps:
 - parallels-desktop
 - parallels
 - phpstorm
-- picasa
-- pocketcasts
+- pocket-casts
 - powershell
 - slack
 - snagit
