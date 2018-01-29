@@ -8,39 +8,39 @@ dotfiles_repo: https://github.com/scottnasello/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_files:
-  - .ignore
+  #- .ignore
   - .bash_profile
-  - .bashrc
-  - .chunkwmrc
-  - .dircolors
+  #- .bashrc
+  #- .chunkwmrc
+  #- .dircolors
   - .gitconfig
   - .gitignore
   - .inputrc
-  - .khdrc
-  - .lftprc
-  - .bash_sessions_disable
-  - .bash/aliases.sh
-  - .bash/colors.sh
-  - .bash/completions.sh
-  - .bash/exports.sh
-  - .bash/functions.sh
-  - .bash/prompt.sh
-  - .bash/shell.sh
-  - .bash/ssh-agent.sh
+  #- .khdrc
+  #- .lftprc
+  #- .bash_sessions_disable
+  #- .bash/aliases.sh
+  #- .bash/colors.sh
+  #- .bash/completions.sh
+  #- .bash/exports.sh
+  #- .bash/functions.sh
+  #- .bash/prompt.sh
+  #- .bash/shell.sh
+  #- .bash/ssh-agent.sh
   - .osx/osx.sh
-  - .weechat/irc.conf
-  - .weechat/lua/autoload/matrix.lua
-  - .weechat/perl/autoload/buffers.pl
-  - .weechat/plugins.conf
-  - .weechat/plugins/scripts/perl/buffers.pl
-  - .weechat/plugins/weechat-matrix-protocol-script/matrix.lua
-  - .weechat/plugins/weechat-notification-center/notification_center.py
-  - .weechat/python/autoload/notification_center.py
-  - .weechat/python/autoload/wee_slack.py
-  - .weechat/script.conf
-  - .weechat/weechat.conf
-  - .weechat/weechat.png
-  - .weechat/xfer.conf
+  #- .weechat/irc.conf
+  #- .weechat/lua/autoload/matrix.lua
+  #- .weechat/perl/autoload/buffers.pl
+  #- .weechat/plugins.conf
+  #- .weechat/plugins/scripts/perl/buffers.pl
+  #- .weechat/plugins/weechat-matrix-protocol-script/matrix.lua
+  #- .weechat/plugins/weechat-notification-center/notification_center.py
+  #- .weechat/python/autoload/notification_center.py
+  #- .weechat/python/autoload/wee_slack.py
+  #- .weechat/script.conf
+  #- .weechat/weechat.conf
+  #- .weechat/weechat.png
+  #- .weechat/xfer.conf
 
 homebrew_installed_packages:
   # Install GNU packages.
@@ -112,7 +112,7 @@ homebrew_installed_packages:
 
   # Libraries
   - luajit                    # required by vim
-  - duti                      # required by tasks/default-applications.yml
+  #- duti                      # required by tasks/default-applications.yml
 
   # Essential development tools/libraries.
   - { name: base16-shell, install_options: "HEAD" } # base16 colors in shell
@@ -181,12 +181,11 @@ homebrew_cask_apps:
 - evernote
 - firefox
 - google-chrome
-- google-drive
+- google-drive-file-stream
 - istat-menus
 - kindle
 - onedrive
 - opera
-- parallels
 - phpstorm
 - pocket-casts
 - powershell
@@ -195,7 +194,6 @@ homebrew_cask_apps:
 - spotify
 - sqlpro-for-mssql
 - vagrant
-- virtualbox
 - visual-studio-code
 - vmware-horizon-client
 
@@ -300,3 +298,4 @@ iterm2_preference_folder: "{{ playbook_dir }}/../files"
 git_user_name: "Scott Nasello"
 git_user_email: nasello.scott@gmail.com
 git_github_user: scottnasello
+git_signingkey: ABC
